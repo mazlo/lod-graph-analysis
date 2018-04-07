@@ -27,6 +27,10 @@ The file contains a header row and results for all measures per data set row-wis
 
 Please note country-specific settings for decimal values.
 
+#### Plots on degree distributions
+
+The folder 'plots/degree-distributions' contains plots that were automatically created during the analysis on degree measures. You can find for each of the data sets considered a plot of the total degree distribution (`distribution_degree.pdf` file) and the in-degree distribution (`distribution_in-degree.pdf` file) values of all vertices.
+
 #### Statistics on the considered data sets
 
 These numbers also can be found in `analysis_statistics.csv`
