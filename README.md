@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/128430935.svg)](https://zenodo.org/badge/latestdoi/128430935)
+
 # lod-graph-analysis
 This repository contains the results of a graph-based analysis of 280 data sets of the LOD Cloud 2017. The results are published along with a paper that reports on these measures.
 
