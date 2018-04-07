@@ -18,12 +18,12 @@ The folder `results/` contains four files
 
 The file contains a header row and results for all measures per data set row-wise. We used the technical notation of the measure as column name. Examples on column names are:
 
-`name`, is the data set name
-`domain`, is the knowledge domain which can be found in the LOD Cloud
-`n`, the number of vertices
-`m`, the number of edges
-`avg_degree`, the average degree, 
-`...`, etc.
+- `name`, is the data set name
+- `domain`, is the knowledge domain which can be found in the LOD Cloud
+- `n`, the number of vertices
+- `m`, the number of edges
+- `avg_degree`, the average degree, 
+- `...`, etc.
 
 Please note country-specific settings for decimal values.
 
