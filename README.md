@@ -9,14 +9,27 @@ This repository contains the results of a graph-based analysis of 280 data sets 
 
 The folder `results/` contains four files
 
-- `analysis_results.csv`, a csv file containing values for all measures for all data sets considered, sorted by knowledge domain and size of the data sets in terms of edges.
+- `analysis_results.csv`, is the mail results file that contains values for all measures for all data sets considered, sorted by knowledge domain and size of the data sets in terms of edges.
 - `analysis_statistics.csv`, contains aggregated values for all measures per domain.
 - `correlation_analysis.csv`, the Pearson correlation test to check correlations of all measures.
 - `vertex_centrality_uris.csv`, a mapping of the technical identifier to the actual RDF resource for `max_degree`, `max_{in|out}_degree`, and `max_pagerank`.
 
-### Statistics on the considered data sets
+#### Analysis Results
 
-These number also can be found in `analysis_statistics.csv`
+The file contains a header row and results for all measures per data set row-wise. We used the technical notation of the measure as column name. Examples on column names are:
+
+`name`, is the data set name
+`domain`, is the knowledge domain which can be found in the LOD Cloud
+`n`, the number of vertices
+`m`, the number of edges
+`avg_degree`, the average degree, 
+`...`, etc.
+
+Please note country-specific settings for decimal values.
+
+#### Statistics on the considered data sets
+
+These numbers also can be found in `analysis_statistics.csv`
 
 __Domain__ | __Max. # of Vertices__ | __Max. # of Edges__ | __Avg. # of Vertices__ | __Avg. # of Edges__ | __\# of Data Sets__ |
 ---------- | ---------------------- | ------------------- | ---------------------- | ------------------- | ------------------- |
@@ -30,10 +43,10 @@ Publications | 218,757,266 | 720,668,819 | 9,036,204 | 28,017,502 | 50 |
 Social Networking | 331,647 | 1,600,499 | 237,003 | 1,062,986 | 3 |
 User Generated | 2,961,628 | 4,932,352 | 967,798 | 1,992,069 | 4 |
 
-### License
+## License
 
 This package is licensed under the MIT License.
 
-### How to Cite
+## How to Cite
 
 Please refer to the DOI for citation.
