@@ -5,6 +5,10 @@ This repository contains the results of a graph-based analysis of 280 data sets 
 
 > As the availability and the inter-connectivity of data sets in the Linked Open Data Cloud grows, so does the necessity to understand the structures of the data. Furthermore, efficient solutions for data-driven tasks, e.g., query processing, rely on meaningful statistics and measures to describe the data. Most of the approaches that analyze  RDF graphs report on statistics collected from the instance level, e.g., the number of literals, classes, etc. However, less is known about the core structure that an RDF data set implicitly exhibits: the RDF graph itself. In this work, we conduct a systematic analysis on the structure of 280 data sets in the LOD Cloud. We report on network measures and graph-based invariants that capture the topology of real-world RDF graphs. Our results indicate that the characteristics of RDF graphs vary notably across knowledge domains. Based on our observations, we identify relevant network measures or graph invariants that characterize graphs in the Semantic Web. 
 
+### Client Software
+
+The repository of the client software that enables data set preparation and the graph-based analysis can be found here: `https://github.com/mazlo/lodcc`
+
 ### Results
 
 The folder `results/` contains four files
