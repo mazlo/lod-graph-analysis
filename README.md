@@ -9,7 +9,7 @@ This repository contains the results of a graph-based analysis of 280 data sets 
 
 ### Client Software
 
-The repository of the client software that enables data set preparation and the graph-based analysis can be found here: [https://github.com/mazlo/lodcc](https://github.com/mazlo/lodcc`)
+The repository of the client software that enables data set preparation and the graph-based analysis can be found here: [https://github.com/mazlo/lodcc](https://github.com/mazlo/lodcc)
 
 ### Results
 
