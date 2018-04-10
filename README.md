@@ -14,7 +14,7 @@ The repository of the client software that enables data set preparation and the 
 ### Scripts and Other Resources
 The folder  `scripts/` contains
 
-- an R script to reproduce the results reported in the paper 
+- an R script to reproduce the results reported in the paper, 
 - a Juypter notebook to reproduce the results reported in the paper:   https://github.com/mazlo/lod-graph-analysis/blob/master/scripts/lod-analysis-notebook.ipynb
 
 
@@ -22,10 +22,10 @@ The folder  `scripts/` contains
 
 The folder `results/` contains four files
 
-- `analysis_results.csv`, is the mail results file that contains values for all measures for all data sets considered, sorted by knowledge domain and size of the data sets in terms of edges.
+- `analysis_results.csv`, contains the main results of the analysis. You can find values for all measures for all data sets considered, sorted by knowledge domain and size of the data sets in terms of edges.
 - `analysis_statistics.csv`, contains aggregated values for all measures per domain.
 - `correlation_analysis.csv`, the Pearson correlation test to check correlations of all measures.
-- `vertex_centrality_uris.csv`, a mapping of the technical identifier to the actual RDF resource for `max_degree`, `max_{in|out}_degree`, and `max_pagerank`.
+- `vertex_centrality_uris.csv`, a table of RDF resources for the values of `max_degree`, `max_{in|out}_degree`, and `max_pagerank` per data set.
 
 #### Analysis Results
 
@@ -42,7 +42,7 @@ Please note country-specific settings for decimal values.
 
 #### Plots on degree distributions
 
-The folder 'plots/degree-distributions' contains plots that were automatically created during the analysis on degree measures. You can find for each of the data sets considered a plot of the total degree distribution (`distribution_degree.pdf` file) and the in-degree distribution (`distribution_in-degree.pdf` file) values of all vertices.
+The folder `plots/degree-distributions` contains plots that were automatically generated during the analysis on degree measures. You can find for each of the data sets considered a plot of the total degree distribution (`distribution_degree.pdf` file) and the in-degree distribution (`distribution_in-degree.pdf` file) values of all vertices.
 
 #### Statistics on the considered data sets
 
