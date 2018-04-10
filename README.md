@@ -44,9 +44,18 @@ Please note country-specific settings for decimal values.
 
 The folder `plots/degree-distributions` contains plots that were automatically generated during the analysis on degree measures. You can find for each of the data sets considered a plot of the total degree distribution (`distribution_degree.pdf` file) and the in-degree distribution (`distribution_in-degree.pdf` file) values of all vertices.
 
-#### Statistics on the considered data sets
+#### Considered data sets
 
-These numbers also can be found in `analysis_statistics.csv`
+The following diagram depicts the data sets included in this analysis (highlighted in color).
+
+![Alt text](./plots/lod2017-analyzed.svg)
+<img src="./plots/lod2017-analyzed.svg">
+
+This is an extension of the original "Linking Open Data Cloud" diagram (see source below) and is licensed under CC-BY-SA. 
+
+Source: "Linking Open Data cloud diagram 2017, by Andrejs Abele, John P. McCrae, Paul Buitelaar, Anja Jentzsch and Richard Cyganiak. http://lod-cloud.net/"
+
+Below are basic statistics about the analysed data sets. These numbers also can be found in `analysis_statistics.csv`
 
 __Domain__ | __Max. # of Vertices__ | __Max. # of Edges__ | __Avg. # of Vertices__ | __Avg. # of Edges__ | __\# of Data Sets__ |
 ---------- | ---------------------- | ------------------- | ---------------------- | ------------------- | ------------------- |
