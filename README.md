@@ -49,7 +49,7 @@ The folder `plots/degree-distributions` contains plots that were automatically g
 The following diagram depicts the data sets included in this analysis (highlighted in color).
 
 ![Alt text](./plots/lod2017-analyzed.svg)
-<img src="./plots/lod2017-analyzed.svg">
+
 
 This is an extension of the original "Linking Open Data Cloud" diagram (see source below) and is licensed under CC-BY-SA. 
 
