@@ -11,7 +11,14 @@ This repository contains the results of a graph-based analysis of 280 data sets 
 
 The repository of the client software that enables data set preparation and the graph-based analysis can be found here: [https://github.com/mazlo/lodcc](https://github.com/mazlo/lodcc)
 
-### Results
+### Scripts and Other Resources
+The folder  `scripts/` contains
+
+- an R script to reproduce the results reported in the paper 
+- a Juypter notebook to reproduce the results reported in the paper:   https://github.com/mazlo/lod-graph-analysis/blob/master/scripts/lod-analysis-notebook.ipynb
+
+
+### Raw Results
 
 The folder `results/` contains four files
 
