@@ -17,7 +17,6 @@ The folder  `scripts/` contains
 - an R script to reproduce the results reported in the paper, 
 - a Juypter notebook to reproduce the results reported in the paper:   https://github.com/mazlo/lod-graph-analysis/blob/master/scripts/lod-analysis-notebook.ipynb
 
-
 ### Raw Results
 
 The folder `results/` contains four files
@@ -26,6 +25,10 @@ The folder `results/` contains four files
 - `analysis_statistics.csv`, contains aggregated values for all measures per domain.
 - `correlation_analysis.csv`, the Pearson correlation test to check correlations of all measures.
 - `vertex_centrality_uris.csv`, a table of RDF resources for the values of `max_degree`, `max_{in|out}_degree`, and `max_pagerank` per data set.
+
+### Data Sets
+
+We have prepared 280 data sets for efficient graph analysis. Please find all data sets available for download [on this website](http://lod-graph-analysis.mazlo.de/2017-08-22/).
 
 #### Analysis Results
 
