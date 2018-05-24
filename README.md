@@ -7,16 +7,6 @@ This repository contains the results of a graph-based analysis of 280 data sets 
 
 > As the availability and the inter-connectivity of data sets in the Linked Open Data Cloud grows, so does the necessity to understand the structures of the data. Furthermore, efficient solutions for data-driven tasks, e.g., query processing, rely on meaningful statistics and measures to describe the data. Most of the approaches that analyze  RDF graphs report on statistics collected from the instance level, e.g., the number of literals, classes, etc. However, less is known about the core structure that an RDF data set implicitly exhibits: the RDF graph itself. In this work, we conduct a systematic analysis on the structure of 280 data sets in the LOD Cloud. We report on network measures and graph-based invariants that capture the topology of real-world RDF graphs. Our results indicate that the characteristics of RDF graphs vary notably across knowledge domains. Based on our observations, we identify relevant network measures or graph invariants that characterize graphs in the Semantic Web. 
 
-### Client Software
-
-The repository of the client software that enables data set preparation and the graph-based analysis can be found here: [https://github.com/mazlo/lodcc](https://github.com/mazlo/lodcc)
-
-### Scripts and Other Resources
-The folder  `scripts/` contains
-
-- an R script to reproduce the results reported in the paper, 
-- a Juypter notebook to reproduce the results reported in the paper:   https://github.com/mazlo/lod-graph-analysis/blob/master/scripts/lod-analysis-notebook.ipynb
-
 ### Raw Results
 
 The folder `results/` contains four files
@@ -28,7 +18,19 @@ The folder `results/` contains four files
 
 ### Data Sets
 
-We have prepared 280 data sets for efficient graph analysis. Please find all data sets available for download [on this website](http://lod-graph-analysis.mazlo.de/2017-08-22/).
+For the analysis to run with data sets from the LOD cloud we have prepared 280 data sets for efficient graph analysis. That means in particular that each data set, (1) was downloaded, (2) checked and fixed for a valid media type, (3) converted into n-triples (if necessary) and merged into one file (if archived), (4) the content was hashed and set up as an edgelist, (5) and stored as compressed binary format `gt.gz`, ready being used by [https://graph-tool.skewed.de](graph-tool) library. 
+
+Please find all data sets "ready and steady" [on this website](http://lod-graph-analysis.mazlo.de/2017-08-22/). You can download the data sets and start running graph analysis with graph-tool.
+
+### Client Software
+
+The repository of the client software that enables data set preparation and the graph-based analysis can be found here: [https://github.com/mazlo/lodcc](https://github.com/mazlo/lodcc)
+
+### Scripts and Other Resources
+The folder  `scripts/` contains
+
+- an R script to reproduce the results reported in the paper, 
+- a Juypter notebook to reproduce the results reported in the paper:   https://github.com/mazlo/lod-graph-analysis/blob/master/scripts/lod-analysis-notebook.ipynb
 
 #### Analysis Results
 
