@@ -1,30 +1,30 @@
-[![DOI](https://zenodo.org/badge/128430935.svg)](https://zenodo.org/badge/latestdoi/128430935)
+[![DOI](https://zenodo.org/badge/128430935.svg)](https://zenodo.org/badge/latestdoi/1214433)
 
-# lod-graph-analysis
-This repository contains the results of a graph-based analysis of 280 data sets of the LOD Cloud 2017. The results are published along with a paper that reports on these measures.
+# Dataset on the Analysis of Graph Measures of RDF Graphs in the LOD Cloud
+This repository contains the results of a graph-based analysis of 280 data sets of the LOD Cloud 2017. The results are published along with a paper, which is currently in review.
 
-### Paper abstract
+The analysis was prepared and performed with [a software framework](https://github.com/mazlo/lodcc) for the analysis of graph measures of RDF graphs.
 
-> As the availability and the inter-connectivity of data sets in the Linked Open Data Cloud grows, so does the necessity to understand the structures of the data. Furthermore, efficient solutions for data-driven tasks, e.g., query processing, rely on meaningful statistics and measures to describe the data. Most of the approaches that analyze  RDF graphs report on statistics collected from the instance level, e.g., the number of literals, classes, etc. However, less is known about the core structure that an RDF data set implicitly exhibits: the RDF graph itself. In this work, we conduct a systematic analysis on the structure of 280 data sets in the LOD Cloud. We report on network measures and graph-based invariants that capture the topology of real-world RDF graphs. Our results indicate that the characteristics of RDF graphs vary notably across knowledge domains. Based on our observations, we identify relevant network measures or graph invariants that characterize graphs in the Semantic Web. 
+[http://data.gesis.org/lodcc/2017-08/](http://data.gesis.org/lodcc/2017-08/) is a browsable version of the results presented here. It containts the collection of 280 datasets, available as serialized graph-objects and a report on 28 graph measures of each of the datasets.
 
 ### Raw Results
 
 The folder `results/` contains four files
 
-- `analysis_results.csv`, contains the main results of the analysis. You can find values for all measures for all data sets considered, sorted by knowledge domain and size of the data sets in terms of edges.
+- `analysis_results.csv`, contains the main results of the analysis. You can find values for all measures for all datasets considered, sorted by knowledge domain and size of the datasets in terms of edges.
 - `analysis_statistics.csv`, contains aggregated values for all measures per domain.
 - `correlation_analysis.csv`, the Pearson correlation test to check correlations of all measures.
-- `vertex_centrality_uris.csv`, a table of RDF resources for the values of `max_degree`, `max_{in|out}_degree`, and `max_pagerank` per data set.
+- `vertex_centrality_uris.csv`, a table of RDF resources for the values of `max_degree`, `max_{in|out}_degree`, and `max_pagerank` per dataset.
 
-### Data Sets
+### Datasets
 
-For the analysis to run with data sets from the LOD cloud we have prepared 280 data sets for efficient graph analysis. That means in particular that each data set, (1) was downloaded, (2) checked and fixed for a valid media type, (3) converted into n-triples (if necessary) and merged into one file (if archived), (4) the content was hashed and set up as an edgelist, (5) and stored as compressed binary format `gt.gz`, ready being used by [https://graph-tool.skewed.de](graph-tool) library. 
+For the analysis to run with datasets from the LOD cloud we have prepared 280 datasets for efficient graph analysis. That means in particular that each dataset, (1) was downloaded, (2) checked and fixed for a valid media type, (3) converted into n-triples (if necessary) and merged into one file (if archived), (4) the content was hashed and set up as an edgelist, (5) and stored as compressed binary format `gt.gz`, ready being used by [https://graph-tool.skewed.de](graph-tool) library. 
 
-Please find all data sets "ready and steady" [on this website](http://lod-graph-analysis.mazlo.de/2017-08-22/). You can download the data sets and start running graph analysis with graph-tool.
+You can find all datasets [on this website](http://data.gesis.org/lodcc/2017-08/).
 
 ### Client Software
 
-The repository of the client software that enables data set preparation and the graph-based analysis can be found here: [https://github.com/mazlo/lodcc](https://github.com/mazlo/lodcc)
+The repository of the client software that enables dataset preparation and the graph-based analysis can be found here: [https://github.com/mazlo/lodcc](https://github.com/mazlo/lodcc)
 
 ### Scripts and Other Resources
 The folder  `scripts/` contains
@@ -34,9 +34,9 @@ The folder  `scripts/` contains
 
 #### Analysis Results
 
-The file contains a header row and results for all measures per data set row-wise. We used the technical notation of the measure as column name. Examples on column names are:
+The file contains a header row and results for all measures per dataset row-wise. We used the technical notation of the measure as column name. Examples on column names are:
 
-- `name`, is the data set name
+- `name`, is the dataset name
 - `domain`, is the knowledge domain which can be found in the LOD Cloud
 - `n`, the number of vertices
 - `m`, the number of edges
@@ -47,11 +47,11 @@ Please note country-specific settings for decimal values.
 
 #### Plots on degree distributions
 
-The folder `plots/degree-distributions` contains plots that were automatically generated during the analysis on degree measures. You can find for each of the data sets considered a plot of the total degree distribution (`distribution_degree.pdf` file) and the in-degree distribution (`distribution_in-degree.pdf` file) values of all vertices.
+The folder `plots/degree-distributions` contains plots that were automatically generated during the analysis on degree measures. You can find for each of the datasets considered a plot of the total degree distribution (`distribution_degree.pdf` file) and the in-degree distribution (`distribution_in-degree.pdf` file) values of all vertices. You can view all plots per datasets [on the website](http://data.gesis.org/lodcc/2017-08/).
 
-#### Considered data sets
+#### Considered datasets
 
-The following diagram depicts the data sets included in this analysis (highlighted in color).
+The following diagram depicts the datasets included in this analysis (highlighted in color).
 
 ![Alt text](./plots/lod2017-analyzed.svg)
 
@@ -60,9 +60,9 @@ This is an extension of the original "Linking Open Data Cloud" diagram (see sour
 
 Source: "Linking Open Data cloud diagram 2017, by Andrejs Abele, John P. McCrae, Paul Buitelaar, Anja Jentzsch and Richard Cyganiak. http://lod-cloud.net/"
 
-Below are basic statistics about the analysed data sets. These numbers also can be found in `analysis_statistics.csv`
+Below are basic statistics about the analysed datasets. These numbers also can be found in `analysis_statistics.csv`
 
-__Domain__ | __Max. # of Vertices__ | __Max. # of Edges__ | __Avg. # of Vertices__ | __Avg. # of Edges__ | __\# of Data Sets__ |
+__Domain__ | __Max. # of Vertices__ | __Max. # of Edges__ | __Avg. # of Vertices__ | __Avg. # of Edges__ | __\# of Datasets__ |
 ---------- | ---------------------- | ------------------- | ---------------------- | ------------------- | ------------------- |
 Cross Domain | 614,448,283 | 2,656,226,986 | 57,827,358 | 218,930,066 | 15 |
 Geography | 47,541,174 | 340,880,391 | 9,763,721 | 61,049,429 | 11  |
