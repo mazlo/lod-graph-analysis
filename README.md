@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/128430935.svg)](https://zenodo.org/badge/latestdoi/1214433)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2203826.svg)](https://doi.org/10.5281/zenodo.2203826)
 
 # Dataset on the Analysis of Graph Measures of RDF Graphs in the LOD Cloud
 This repository contains the results of a graph-based analysis of 280 data sets of the LOD Cloud 2017. [http://data.gesis.org/lodcc/2017-08/](http://data.gesis.org/lodcc/2017-08/) contains a browsable version of the results presented here. It containts the collection of 280 datasets, available as serialized graph-objects and a report on 28 graph measures of each of the datasets.
